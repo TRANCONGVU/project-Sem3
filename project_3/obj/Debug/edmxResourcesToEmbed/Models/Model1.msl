@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ShowRoomManagerModelStoreContainer" CdmEntityContainer="ShowRoomManagerEntities">
+    <EntitySetMapping Name="admins">
+      <EntityTypeMapping TypeName="ShowRoomManagerModel.admin">
+        <MappingFragment StoreEntitySet="admin">
+          <ScalarProperty Name="id_admin" ColumnName="id_admin" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="id_employee" ColumnName="id_employee" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Brands">
+      <EntityTypeMapping TypeName="ShowRoomManagerModel.Brand">
+        <MappingFragment StoreEntitySet="Brand">
+          <ScalarProperty Name="id_brand" ColumnName="id_brand" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="DateOfBrith" ColumnName="DateOfBrith" />
+          <ScalarProperty Name="country" ColumnName="country" />
+          <ScalarProperty Name="id_category" ColumnName="id_category" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="categories">
+      <EntityTypeMapping TypeName="ShowRoomManagerModel.category">
+        <MappingFragment StoreEntitySet="category">
+          <ScalarProperty Name="id_category" ColumnName="id_category" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="customers">
+      <EntityTypeMapping TypeName="ShowRoomManagerModel.customer">
+        <MappingFragment StoreEntitySet="customer">
+          <ScalarProperty Name="id_customer" ColumnName="id_customer" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="cmt" ColumnName="cmt" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="id_employee" ColumnName="id_employee" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="ShowRoomManagerModel.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="id_employee" ColumnName="id_employee" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="sex" ColumnName="sex" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="id_showroom" ColumnName="id_showroom" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="ShowRoomManagerModel.Order">
+        <MappingFragment StoreEntitySet="Order">
+          <ScalarProperty Name="id_order" ColumnName="id_order" />
+          <ScalarProperty Name="id_product" ColumnName="id_product" />
+          <ScalarProperty Name="id_employee" ColumnName="id_employee" />
+          <ScalarProperty Name="id_customer" ColumnName="id_customer" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="vat" ColumnName="vat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="ShowRoomManagerModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="id_product" ColumnName="id_product" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="model" ColumnName="model" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="id_brand" ColumnName="id_brand" />
+          <ScalarProperty Name="id_showroom" ColumnName="id_showroom" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="showrooms">
+      <EntityTypeMapping TypeName="ShowRoomManagerModel.showroom">
+        <MappingFragment StoreEntitySet="showroom">
+          <ScalarProperty Name="id_showroom" ColumnName="id_showroom" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="phonenumber" ColumnName="phonenumber" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="id_product" ColumnName="id_product" />
+          <ScalarProperty Name="id_company" ColumnName="id_company" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="ShowRoomManagerModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
